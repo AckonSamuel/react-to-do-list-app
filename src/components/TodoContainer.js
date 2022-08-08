@@ -38,6 +38,10 @@ class TodoContainer extends React.Component {
     }))
   };
 
+  delTodo = id => {
+    console.log("deleted", id);
+  };
+
   render() {
     return (
      <div>
