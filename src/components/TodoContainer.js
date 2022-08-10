@@ -62,7 +62,7 @@ class TodoContainer extends React.Component {
   };
 
   setUpdate = (updatedTitle, id) => {
-    console.log(updatesTitle, id)
+    console.log(updatedTitle, id)
   }
 
   render() {
