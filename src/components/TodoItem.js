@@ -22,7 +22,6 @@ class TodoItem extends React.Component {
         <span style={this.props.todo.completed ? completedStyle : null}>
           {this.props.todo.title}
         </span>
-       {this.props.todo.title}
       </li>
   }
 }
