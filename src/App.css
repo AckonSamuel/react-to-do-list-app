@@ -45,7 +45,8 @@ body {
 }
 
 .input-text::placeholder {
-  color: #000;
+  color: rgb(165, 162, 162);
+  font-style: italic;
 }
 
 .input-submit {
