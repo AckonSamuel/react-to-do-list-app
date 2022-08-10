@@ -40,7 +40,7 @@ class TodoItem extends React.Component {
     return <li className={styles.item}>
     <div 
     onDoubleClick={this.handleEditing} style={viewMode}>
-      <input type="checkbox" 
+      <input type="checkbox"
       className={styles.checkbox}
       checked={completed}
       onChange={() => this.props.handleChangeProps(id)} /> 
