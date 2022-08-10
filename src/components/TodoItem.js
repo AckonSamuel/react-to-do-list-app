@@ -13,6 +13,10 @@ class TodoItem extends React.Component {
     })
   }
 
+  handleUpdateDone = event => {
+    console.log(event.key)
+  }
+
   render() {
     const completedStyle = {
       fontStyle: "italic",
@@ -49,7 +53,8 @@ class TodoItem extends React.Component {
         value={title}
         onChange={e => {
           this.props.setUpdate(e.target.value, id)
-        }}/>
+        }}
+        onKeyDown={this.handleUpdateDone}/>
       </li>
   }
 }
