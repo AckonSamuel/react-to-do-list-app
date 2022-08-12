@@ -41,4 +41,20 @@ const TodoContainer = () => {
       completed: false
     }
   }
+
+  return (
+    <div className="container">
+      <div className="inner">
+      <Header />
+      <InputTodo addTodoProps={addTodoItem} />
+      <TodosList 
+      todos = {task.todos} 
+      handleChangeProps={handleChange}
+      deleteTodoProps={delTodo} 
+      setUpdate={setUpdate}
+      />
+    </div>
+    </div>
+   )
+ }
 }
